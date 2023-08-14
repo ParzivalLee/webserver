@@ -8,6 +8,7 @@
 """
 import Log
 
+Log.printInfo("Information Print Test")
 Log.printNotice("Notice Print Test")
 Log.printWarning("Warning Print Test")
 Log.printError("Error Print Test")

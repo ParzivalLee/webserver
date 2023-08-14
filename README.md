@@ -9,9 +9,10 @@ import Log
 Log.printLog('消息类型', '消息内容')
 ```
  - ### printNotice, printWarning, printError
-    用于输出通知，警告和错误消息
+    用于输出信息，通知，警告和错误消息
 ```python
 import Log
+Log.printInfo("信息内容")
 Log.printNotice("通知内容")
 Log.printWarning("警告内容")
 Log.printError("错误内容")

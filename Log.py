@@ -20,19 +20,29 @@ def printLog(msg_type: str, msg: str) -> None:
     print('[%s] %s: %s' % (msg_type, time.strftime('%Y-%m-%d %H:%M:%S'), msg))
 
 
-def printNotice(msg: str) -> None:
+def printInfo(msg: str) -> None:
     """
-    打印通知信息
+    打印信息
     :param msg: 信息内容
     :return: None
     """
     # 输出信息标识符为绿色
-    print('\033[0;32m[Notice]\033[0m %s: %s' % (time.strftime('%Y-%m-%d %H:%M:%S'), msg))
+    print('\033[0;32m[Info]\033[0m %s: %s' % (time.strftime('%Y-%m-%d %H:%M:%S'), msg))
+
+
+def printNotice(msg: str) -> None:
+    """
+    打印通知
+    :param msg: 信息内容
+    :return: None
+    """
+    # 输出信息标识符为蓝色
+    print('\033[0;34m[Notice]\033[0m %s: %s' % (time.strftime('%Y-%m-%d %H:%M:%S'), msg))
 
 
 def printWarning(msg: str) -> None:
     """
-    打印警告信息
+    打印警告
     :param msg: 信息内容
     :return: None
     """
@@ -42,7 +52,7 @@ def printWarning(msg: str) -> None:
 
 def printError(msg: str) -> None:
     """
-    打印错误信息
+    打印错误
     :param msg: 信息内容
     :return: None
     """
