@@ -8,8 +8,8 @@
 """
 import Log
 
+Log.printLog('Undefined Log', '不将日志记录到文件的情况')
 Log.printInfo("Information Print Test")
 Log.printNotice("Notice Print Test")
 Log.printWarning("Warning Print Test")
 Log.printError("Error Print Test")
-
