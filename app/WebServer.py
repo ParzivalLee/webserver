@@ -7,7 +7,7 @@
 @description 网页服务器
 """
 import pymongo
-import config
+from . import config
 from fastapi import FastAPI
 
 """全局变量"""
@@ -17,5 +17,5 @@ global_variable: dict = dict()
 app = FastAPI(debug=True)
 
 """Mongo数据库连接"""
-mongoClient = pymongo.MongoClient(host=config.MONGO_HOST, port=config.MONGO_PORT)
-mongoDB = mongoClient[config.MONGO_DATABASE]
+# mongoClient = pymongo.MongoClient(host=config.MONGO_HOST, port=config.MONGO_PORT)
+# mongoDB = mongoClient[config.MONGO_DATABASE]

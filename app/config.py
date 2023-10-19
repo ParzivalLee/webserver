@@ -24,6 +24,6 @@ WEBSERVER_HOST = configParser.get("web_server", "host")
 WEBSERVER_PORT = int(configParser.get("web_server", "port"))
 
 """MongoDB"""
-MONGO_HOST = configParser.get("mongo", "host")
-MONGO_PORT = int(configParser.get("mongo", "port"))
-MONGO_DATABASE = configParser.get("mongo", "database")
+# MONGO_HOST = configParser.get("mongo", "host")
+# MONGO_PORT = int(configParser.get("mongo", "port"))
+# MONGO_DATABASE = configParser.get("mongo", "database")
