@@ -16,6 +16,3 @@ global_variable: dict = dict()
 """FastAPI服务"""
 app = FastAPI(debug=True)
 
-"""Mongo数据库连接"""
-# mongoClient = pymongo.MongoClient(host=config.MONGO_HOST, port=config.MONGO_PORT)
-# mongoDB = mongoClient[config.MONGO_DATABASE]

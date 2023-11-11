@@ -20,7 +20,7 @@ def insert(data: dict, table_name: str) -> int:
     fields: tuple = tuple(data.keys())
     fields_str: str = ','.join(fields)  # 构造字段字符串
     values_str: str = ','.join([':%s' % i for i in fields])  # 构造值字符串
-    sql: TextClause = text('INSER INTO %s(%s) VALUES(%s)' % (table_name, fields_str, values_str))  # 构造SQL语句
+    sql: TextClause = text('INSERT INTO %s(%s) VALUES(%s)' % (table_name, fields_str, values_str))  # 构造SQL语句
     with engine.connect() as connection:
         try:
             connection.execute(sql, data)

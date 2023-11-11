@@ -31,6 +31,10 @@ MYSQL_PORT: int = int(configParser.get("mysql", "port"))
 MYSQL_DATABASE: str = configParser.get("mysql", "database")
 
 """MongoDB"""
-# MONGO_HOST = configParser.get("mongo", "host")
-# MONGO_PORT = int(configParser.get("mongo", "port"))
-# MONGO_DATABASE = configParser.get("mongo", "database")
+MONGO_HOST = configParser.get("mongo", "host")
+MONGO_PORT = int(configParser.get("mongo", "port"))
+MONGO_DATABASE = configParser.get("mongo", "database")
+
+"""Redis"""
+REDIS_HOST: str = configParser.get("redis", "host")
+REDIS_PORT: int = int(configParser.get("redis", "port"))
